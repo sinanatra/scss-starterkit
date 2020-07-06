@@ -1,0 +1,42 @@
+.columns {
+    display: block;
+    @media screen and (min-width: $tablet), print {
+        display: flex;
+    }
+
+    &.columns-wrap {
+        flex-wrap: wrap;
+    }
+
+    margin-left: -$gutter * .5;
+    margin-right: -$gutter * .5;
+    margin-top: -$gutter * .5;
+    margin-bottom: $gutter * .5;
+    &:last-child {
+        margin-bottom: -$gutter * .5;
+    }
+
+    .column {
+        display: block;
+        flex-basis: 0;
+        flex-grow: 1;
+        flex-shrink: 1;
+        padding: $gutter * .5;
+
+        &.is-half {
+            flex: none;
+            flex-basis: 50%;
+            width: 50%;
+        }
+        &.is-one-quarter {
+            flex: none;
+            flex-basis: 25%;
+            width: 25%;
+        }
+        &.is-one-third {
+            flex: none;
+            flex-basis: 33%;
+            width: 33%;
+        }
+    }
+}
