@@ -9,12 +9,10 @@
 |___/                                                                                                                                                 
 */
 
-@import "base/reset.scss"; // Normalize.css - CSS Reset
+@import "base/reset.scss"; 
+@import "variables";
 @import "base/base";
 @import "base/fonts";
-
-@import "variables";
-
-@import "elements/columns";
-@import "elements/var";
-@import "elements/space";
+@import 'elements/columns';
+@import 'elements/var';
+@import 'elements/space';
